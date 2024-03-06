@@ -1,0 +1,13 @@
++CHARACTERS_LIST
+-id INTEGER
+-name TEXT
+-attribute TEXT
+-type TEXT
+-starting_rarity INTEGER
+-max_rarity INTEGER
+-hp INTEGER
+-atk INTEGER
+-def INTEGER
+-release_date INTEGER
+-disks TEXT
+*
