@@ -1,0 +1,102 @@
+navbar {
+  display: flex;
+}
+
+/*Style for the sidebar itself*/
+
+.sidebar {
+  height: calc(100% - 20px);
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  position: fixed;
+  padding: 10px;
+}
+
+.sidebar.open {
+  width: 45px;
+}
+
+.sidebar.closed {
+  width: 500px;
+}
+
+/*Style for each row in the navbar*/
+
+.row {
+  width: 500px;
+  display: flex;
+  gap: 11px;
+  cursor: pointer;
+}
+
+.row:last-of-type {
+  cursor: default;
+}
+
+.row.active {
+  color: #ffffff;
+}
+
+.row.inactive {
+  color: #666666;
+}
+
+/*Styles for the tool's icon in the navbar*/
+
+.row:last-of-type {
+  margin-top: auto;
+}
+
+.icon_holder {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+/*Styles for the tool's icon in the navbar*/
+
+.icon {
+  font-size: 30px;
+}
+
+.icon.active {
+  color: #60FF2F;
+}
+
+.icon.inactive {
+  color: #FF4B4B;
+}
+
+.row:last-of-type>.icon_holder .icon {
+  font-size: 16px;
+}
+
+/*Styles for the tool's names in the navbar*/
+
+.tool {
+  font-size: 18px;
+  width: calc(100% - 60px);
+  margin: 10px 0px;
+}
+
+.row:first-of-type>.tool {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  cursor: default;
+}
+
+.row:last-of-type>.tool {
+  font-size: 12px;
+}
+
+/*Styles for the divisory line in the navbar*/
+
+.divisory_line {
+  width: calc(100% - 10px);
+}

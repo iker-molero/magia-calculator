@@ -1,0 +1,24 @@
+@font-face {
+
+  font-family: Inter;
+  src: url(../fonts/Inter.ttf);
+
+}
+
+body {
+
+  user-select: none;
+  background-color: #0A0A0A;
+  color: #ffffff;
+  font-family: Inter;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.page_content {
+
+  padding: 20px;
+  padding-left: 90px;
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magia Calculator</title>
+
+  <!-- [Styling references] -->
+  <!-- {Libraries} -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+  <!-- {Main CSS} -->
+  <link rel="stylesheet" href="css/general.css">
+
+  <!-- {Directives} -->
+  <link rel="stylesheet" href="js/directives/navbar_directive/navbar.css">
+
+</head>
+
+<body ng-app="magia_calculator">
+  <div ng-controller="hub_controller">
+
+    <!-- Navbar directive -->
+    <navbar></navbar>
+
+    <div class="page_content" ui-view>
+
+    </div>
+
+  </div>
+</body>
+
+<!-- [Scripting references] -->
+<!-- {Frameworks} -->
+<!-- Angular.js -->
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+<script src="node_modules/angular-resource/angular-resource.min.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<script src="js/factories.js"></script>
+
+<!-- {Libraries} -->
+<!-- {Controllers} -->
+<script src="js/controllers/hub_controller.js"></script>
+
+<!-- {Services} -->
+<!-- {Directives} -->
+<script src="js/directives/navbar_directive/navbar.js"></script>
+
+</html>

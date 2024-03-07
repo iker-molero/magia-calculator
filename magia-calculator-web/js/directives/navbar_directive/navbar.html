@@ -1,0 +1,36 @@
+<div class="sidebar open" ng-class="!is_open ? 'open' : 'closed'">
+
+  <div class="row">
+
+    <div class="icon_holder" ng-click="toggle_navbar()">
+      <i class="icon fa fa-bars"></i>
+    </div>
+
+    <p class="tool">MAGIA CALCULATOR</p>
+
+  </div>
+
+  <hr class="divisory_line">
+
+  <div class="row" ng-class="state.name == get_current_state() ? 'active' : 'inactive'" ng-repeat="state in states"
+    ng-click="change_page(state.name)">
+
+    <div class="icon_holder">
+      <i class="icon" ng-class="state.icon"></i>
+    </div>
+
+    <p class="tool">{{ state.display_name }}</p>
+
+  </div>
+
+  <div class="row">
+
+    <div class="icon_holder">
+      <i class="icon fa fa-wifi" ng-class="api_active ? 'active' : 'inactive'"></i>
+    </div>
+
+    <p class="tool">API Direction: {{ api_direction }}</p>
+
+  </div>
+
+</div>
