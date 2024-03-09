@@ -1,24 +1,109 @@
+/*Loaded custom font*/
 @font-face {
-
   font-family: Inter;
   src: url(../fonts/Inter.ttf);
-
 }
 
 body {
-
   user-select: none;
   background-color: #0A0A0A;
   color: #ffffff;
   font-family: Inter;
   padding: 0px;
   margin: 0px;
-
 }
 
+/*Style for the page container*/
 .page_content {
-
   padding: 20px;
   padding-left: 90px;
+}
 
+/*Styles for the buttons*/
+.btn {
+  /*Button dimensions*/
+  width: fit-content;
+  height: fit-content;
+  padding: 12px 12px;
+
+  /*General styling*/
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+
+  /*Inside items position*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  /*Child objects (Text and Icons)*/
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.btn p {
+  margin: 0px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.btn i {
+  width: fit-content;
+  height: 18px;
+}
+
+.btn.icon i {
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+}
+
+/*Main button*/
+.btn.main:hover {
+  border: 2px solid #618DFF;
+  color: #618DFF;
+}
+
+.btn.main:active {
+  border: 2px solid #3769EB;
+  color: #3769EB;
+}
+
+/*OK button*/
+.btn.ok:hover {
+  border: 2px solid #95FF8C;
+  color: #95FF8C;
+}
+
+.btn.ok:active {
+  border: 2px solid #57CD55;
+  color: #57CD55;
+}
+
+/*Cancel button*/
+.btn.cancel:hover {
+  border: 2px solid #FF6565;
+  color: #FF6565;
+}
+
+.btn.cancel:active {
+  border: 2px solid #EC4D4D;
+  color: #EC4D4D;
+}
+
+/*Disabled buttons*/
+.btn.main:disabled,
+.btn.ok:disabled,
+.btn.cancel:disabled {
+  border: 2px solid #545454;
+  color: #545454;
+  cursor: not-allowed;
 }
