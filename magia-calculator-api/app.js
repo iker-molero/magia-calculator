@@ -17,10 +17,12 @@ const CHARACTERS_LIST = require('./setup/characters_list.js');
 // Resource modules references
 const STATUS_RESOURCE = require("./resources/status_resource.js");
 const CHARACTERS_RESOURCE = require("./resources/characters_resource.js");
+const IMAGES_RESOURCE = require('./resources/images_resource.js');
 
 // Resource modules use
 API.use('', STATUS_RESOURCE);
 API.use('/characters', CHARACTERS_RESOURCE);
+API.use('/images', IMAGES_RESOURCE);
 
 // Runs all the required setup functions for the API
 async function setup() {
