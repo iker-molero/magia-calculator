@@ -1,7 +1,7 @@
 // Dependecies references
 const EXPRESS = require('express');
 
-// Enviroment variables references
+// Utilities references
 const { get_database } = require('../utilities/database_connection.js');
 
 // API reference
