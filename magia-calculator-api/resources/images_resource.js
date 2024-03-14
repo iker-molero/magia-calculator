@@ -31,7 +31,6 @@ ROUTER.get("/icon/:character_name", async (req, res) => {
     ]
     // Build the URL with the parts array
     const IMAGE_URL = IMAGE_URL_PARTS.join("/");
-    console.log(IMAGE_URL);
     // Load the image with AXIOS
     const IMAGE = await AXIOS.get(IMAGE_URL, { responseType: 'arraybuffer' });
     // Resize the image with SHARP

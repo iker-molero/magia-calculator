@@ -1,4 +1,4 @@
-const app = angular.module("magia_calculator", ['ui.router', 'ngResource']);
+const app = angular.module("magia_calculator", ['ui.router', 'ui.bootstrap', 'ngResource']);
 app.run(function($rootScope) {
 
   // Creates the variables for the API connection
