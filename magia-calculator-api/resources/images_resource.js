@@ -16,8 +16,12 @@ ROUTER.get("/icon/:character_name", async (req, res) => {
 
   try {
 
+    // A tiny work around to fix "Felicia-chan" character
+    if (req.params.character_name == "Felicia-chan") req.params.character_name = "Felicia-Chan";
+
     // Format the character name for the URL
     const FORMATED_CHARACTER_NAME = req.params.character_name.replace(/\s/g, "_");
+
     // Add .png at the end of the name
     const FILE_NAME = FORMATED_CHARACTER_NAME + ".png";
     // Hash the file name to get the path to the image
@@ -35,7 +39,7 @@ ROUTER.get("/icon/:character_name", async (req, res) => {
     const IMAGE = await AXIOS.get(IMAGE_URL, { responseType: 'arraybuffer' });
     // Resize the image with SHARP
     const RESIZED_IMAGE = await SHARP(IMAGE.data)
-      .resize({ width: 200, height: 200 })
+      .resize({ width: 50, height: 50 })
       .toBuffer();
     // Set the response type to .png
     res.contentType("image/png");
