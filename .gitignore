@@ -1,2 +1,5 @@
 magia-calculator-api/node_modules
+magia-calculator-api/package-lock.json
+magia-calculator-api/database/magia_calculator.db
 magia-calculator-web/node_modules
+magia-calculator-web/package-lock.json

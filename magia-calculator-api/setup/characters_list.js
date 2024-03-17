@@ -215,7 +215,7 @@ async function iterate_character_row(character_data_row, $, characters_ids) {
             // Creates the array to add to the CHARACTER_JSON once the disks are populated
             const CHARACTER_DISKS = [];
 
-            const DISK_TYPES = ["Accele", "Blasth", "Blastv", "Blasts", "Blastb", "Charge"];
+            const DISK_TYPES = ["Accele", "Blast", "Charge"];
 
             // Populates the CHARACTER_DISKS array
             // Iterates through all the disks in the CHARACTER_DISKS_HOLDER
