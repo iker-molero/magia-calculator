@@ -1,12 +1,11 @@
 .backdrop .modal {
-  width: 1460px;
+  width: 90vw;
   height: 90vh;
   background-color: #151515;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .backdrop .top_bar {
@@ -17,22 +16,44 @@
   align-items: center;
 }
 
-.top_bar p {
+.backdrop .top_bar p {
   font-size: 30px;
   font-weight: 500;
 }
 
 .backdrop .content {
   flex-grow: 1;
+  height: calc(100% - 68px);
   display: flex;
 }
 
-.content .section {
-  flex-grow: 1;
+.backdrop .section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc(50% - 1px);
+  height: calc(100% - 20px);
+  padding: 10px;
+  padding-left: 0px;
 }
 
-.content .separation {
+.backdrop .separation {
   height: 100%;
   width: 2px;
   background-color: #333333;
+}
+
+.backdrop .input_holder {
+  display: flex;
+  gap: 10px;
+}
+
+.backdrop .list_holder {
+  width: calc(100% - 10px);
+  height: calc(100% - 45px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: scroll;
+  padding: 0px 5px;
 }

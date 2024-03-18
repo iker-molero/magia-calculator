@@ -1,0 +1,18 @@
+<div class="card" ng-show="image_loaded" ng-style="selected.name == name ? {'background-color' : '#5A5A5A'} : {}"
+  ng-style="selectedCharacter.name == name ? {'background-color': '#5E5E5E'} : {}">
+  <img src="http://localhost:9000/images/icon/{{ name }}" draggable="false">
+  <div class="attribute {{ attribute }}"></div>
+  <div>
+    <p>{{ name }}</p>
+    <p>{{ rarity_value }}</p>
+  </div>
+  <div>
+    <p>HP: {{ hp }}</p>
+    <p>ATK: {{ atk }}</p>
+    <p>DEF: {{ def }}</p>
+    <div class="disks_holder">
+      <div class="disk {{ disk_type }}" ng-repeat="disk_type in disks_array track by $index"></div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,28 @@
+text {
+  display: flex;
+  flex-grow: 1;
+}
+
+text div {
+  position: relative;
+}
+
+text input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 0px;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  color: #ffffff;
+  padding: 0px 40px 0px 10px;
+  font-size: 16px;
+}
+
+text i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0%, -65%);
+}

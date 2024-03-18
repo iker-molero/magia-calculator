@@ -8,11 +8,29 @@
     </div>
     <div class="content">
       <!-- [Left side of the modal] -->
-      <div class="section"></div>
+      <div class="section">
+
+        <!-- Filter inputs -->
+        <div class="input_holder">
+          <text width="100%" height="35px" placeholder="Find a character by name" icon="fa-search" value="search_value"
+            change="filter_data()"></text>
+        </div>
+        <!-- Characters list -->
+        <div class="list_holder">
+          <template-card ng-repeat="character in characters_list" ng-show="characters_filtered_list.includes(character)"
+            id="character.id" name="character.name" attribute="character.attribute"
+            starting-rarity="character.starting_rarity" max-rarity="character.max_rarity" hp="character.hp"
+            atk="character.atk" def="character.def" disks-string="character.disks" selected="selected_character"
+            ng-click="select_character(character)"></template-card>
+        </div>
+
+      </div>
       <!-- [Separation bar] -->
       <div class="separation"></div>
       <!-- [Right side of the modal] -->
-      <div class="section"></div>
+      <div class="section">
+        <p style="width: 100%; height: 100%; text-align: center;">Selected character: {{ selected_character.name }}</p>
+      </div>
     </div>
   </div>
 </div>
